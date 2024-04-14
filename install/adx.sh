@@ -4,7 +4,7 @@
 if pkg list-installed | grep -q "python"; then
     echo "Python 3 is installed."
     reset 
-    curl -s "https://raw.githubusercontent.com/kekoDev/telethon-with-echo/main/bot-ios.py" > bot.py 
+    curl -s "https://raw.githubusercontent.com/fi944/telethon-with-echo/main/bot-ios.py" > bot.py 
     python3 bot.py
 else
     echo "Python 3 is not installed."
@@ -13,7 +13,7 @@ else
     pkg install python3
     pip3 install telethon requests python-telegram-bot
     reset 
-    curl -s "https://raw.githubusercontent.com/kekoDev/telethon-with-echo/main/bot-ios.py" > bot.py 
+    curl -s "https://raw.githubusercontent.com/fi944/telethon-with-echo/main/bot-ios.py" > bot.py 
     python3 bot.py
 fi
 
